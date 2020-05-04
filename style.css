@@ -20,6 +20,27 @@ main{
 	position: relative;
 	border :1px solid #C0C0C0;
 }
+.step-box:last-child{
+	margin-right: 0;
+}
+.item1{
+	height: 150px;
+	background-image: url(img/flow01.png);
+	background-position: bottom;
+	background-size: cover;
+}
+.item2{
+	height: 150px;
+	background-image: url(img/flow02.png);
+	background-position: bottom;
+	background-size:cover;
+}
+.item3{
+	height: 150px;
+	background-image: url(img/flow03.png);
+	background-position: bottom;
+	background-size:cover;
+}
 .step{
 	position: absolute;
 	left: 0;
@@ -27,42 +48,27 @@ main{
 	color: #FFF;
 	background-color: #FF9900;
 }
-.item1{
-	width: 280px;
-	height: 150px;
-	background-image: url(img/flow01.png);
-	background-position: bottom;
-	background-size: cover;
-}
-.item2{
-	width: 280px;
-	height: 150px;
-	background-image: url(img/flow02.png);
-	background-position: bottom;
-	background-size:cover;
-}
-.item3{
-	width: 280px;
-	height: 150px;
-	background-image: url(img/flow03.png);
-	background-position: bottom;
-	background-size:cover;
-}
-.step-box:last-child{
-	margin-right: 0;
-}
 
 @media screen and (max-width: 768px){
-	main{
-		width: 90%;
-		margin: 50px auto;
-	}
 	.step-box{
-		float: none;
-		margin: 0 auto;
+		margin:0 auto;
 		margin-bottom: 20px;
+		float:none;
+		width: 90%;
 	}
 	.step-box:last-child{
-	margin:0 auto;
+		margin:0 auto;
+		margin-bottom:none;
 	}
+	span{
+		font-size:40px;
+	}
+	.item1, .item2, .item3{
+		height:340px;
+	}
+	.title{
+		font-size:40px;
+	}
+	.text{
+		font-size:25px;
 }
