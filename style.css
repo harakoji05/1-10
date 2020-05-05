@@ -47,6 +47,10 @@ main{
 	top: 0;
 	color: #FFF;
 	background-color: #FF9900;
+	padding: 3px;
+}
+.title{
+  margin: 15px 0 5px;
 }
 
 @media screen and (max-width: 768px){
